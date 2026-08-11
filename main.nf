@@ -18,7 +18,7 @@ process RELAY {
   maxRetries 3
   cpus 4
   memory '8 GB'
-  container 'public.ecr.aws/aws-cli/aws-cli:latest'
+  container 'quay.io/biocontainers/awscli:1.29.37'
 
   input:
   tuple val(src), val(subdir)
